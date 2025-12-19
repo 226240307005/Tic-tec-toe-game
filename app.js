@@ -1,3 +1,53 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+body {
+  background-color: cadetblue;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------- HEADING ---------- */
+#heading {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+  
+}
+
+#heading h3 {
+  font-size: 1.3rem;
+}
+
+#winner {
+  margin:10px;
+  font-size: 1.2rem;
+  color: darkred;
+}
+
+/* ---------- MAIN ---------- */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- GAME BOARD ---------- */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+
+  width: 90vw;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+
+  margin: 15px auto;
+}
 .overlay{
   position: fixed;
   inset: 0;
@@ -14,4 +64,75 @@
   max-width: 400px;
   width: 90%;
   text-align: center;
+}
+#closeBtn{
+  padding:6px 9px;
+ 
+ 
+  background-color: #0b0b0b;
+  border-radius: 5px;
+  border: none;
+  color: aliceblue;
+}
+.box {
+  background-color: azure;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+   
+  font-size: 2rem;
+  font-weight: bold;
+  color: darkred;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn button,
+#playBtn {
+  cursor: pointer;
+  padding: 10px 18px;
+  background-color: #0b0b0b;
+  color: wheat;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* ---------- RESPONSIVE SCALE UP ---------- */
+@media (min-width: 576px) {
+  .container {
+    max-width: 340px;
+  }
+
+  .box {
+    font-size: 2rem;
+  }
+
+  #winner {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 460px;
+  }
+
+  #heading h3 {
+    font-size: 1.6rem;
+  }
 }
