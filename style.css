@@ -16,6 +16,7 @@ body {
   text-align: center;
   margin: 10px 0;
   font-weight: bold;
+  
 }
 
 #heading h3 {
@@ -23,7 +24,7 @@ body {
 }
 
 #winner {
-  margin-top: 8px;
+  margin:10px;
   font-size: 1.2rem;
   color: darkred;
 }
@@ -47,7 +48,32 @@ main {
 
   margin: 15px auto;
 }
-
+.overlay{
+  position: fixed;
+  inset: 0;
+  background: rgb(0,0,0,0.6);
+  display:none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.modal{
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+#closeBtn{
+  padding:6px 9px;
+ 
+ 
+  background-color: #0b0b0b;
+  border-radius: 5px;
+  border: none;
+  color: aliceblue;
+}
 .box {
   background-color: azure;
   border: none;
