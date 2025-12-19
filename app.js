@@ -19,7 +19,7 @@ let winPos = [
 function checkDraw(){
 console.log(i)
 if(i===9){
-  popUp("Fuck! it's Draw")
+  popUp("Ohh! it's Draw")
     playBtn.hidden = false
 }
 }
@@ -114,3 +114,4 @@ const checkWinner = () => {
     }
   }
 }
+
